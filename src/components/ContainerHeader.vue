@@ -332,15 +332,18 @@ export default {
     font-size: 20px;
     line-height: 43px;
     flex-grow: 1;
-    text-align: left;
+    text-align: right;
     overflow-x: hidden;
     white-space: nowrap;
+    direction: rtl;
 }
 
 .kiwi-header-name {
     text-overflow: ellipsis;
     overflow: hidden;
     padding: 0 10px;
+    text-align: right;
+    direction: rtl;
 }
 
 .kiwi-header-name:hover {

@@ -1,6 +1,6 @@
 <template>
-    <div :class="{'kiwi-nicklist--filtering': filter_visible }" class="kiwi-nicklist">
-        <div class="kiwi-nicklist-usercount" @click="toggleUserFilter">
+    <div :class="{'kiwi-nicklist--filtering': filter_visible }" class="kiwi-nicklist" dir="rtl">
+        <div class="kiwi-nicklist-usercount" dir="rtl" @click="toggleUserFilter">
             <span>
                 {{
                     filter_visible ?
@@ -214,6 +214,7 @@ export default {
 .kiwi-sidebar.kiwi-sidebar-section-nicklist {
     max-width: 250px;
     width: 250px;
+    text-align: right;
 }
 
 .kiwi-nicklist {
@@ -228,6 +229,7 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    text-align: right;
 }
 
 .kiwi-nicklist-usercount {
@@ -239,11 +241,13 @@ export default {
     line-height: 40px;
     width: 100%;
     border-bottom: 1px solid;
+    text-align: right;
 }
 
 .kiwi-nicklist-usercount span {
     margin-left: 15px;
     font-weight: 600;
+    text-align: right;
 }
 
 .kiwi-nicklist-usercount .fa-search {
@@ -253,11 +257,13 @@ export default {
     line-height: 40px;
     align-self: flex-start;
     margin-right: 15px;
+    text-align: right;
 }
 
 .kiwi-nicklist-usercount .fa-search:hover,
 .kiwi-nicklist--filtering .kiwi-nicklist-usercount .fa-search {
     opacity: 1;
+    text-align: right;
 }
 
 .kiwi-nicklist-usercount input {
@@ -271,10 +277,12 @@ export default {
     box-sizing: border-box;
     flex-grow: 1;
     transition: all 0.2s;
+    text-align: right;
 }
 
 .kiwi-nicklist--filtering .kiwi-nicklist-usercount input {
     opacity: 1;
+    text-align: right;
 }
 
 .kiwi-nicklist-users {
@@ -289,12 +297,14 @@ export default {
     list-style: none;
     line-height: 1.2em;
     margin-top: 6px;
+    text-align: right;
 }
 
 @media screen and (max-width: 759px) {
     .kiwi-sidebar.kiwi-sidebar-section-nicklist {
         width: 100%;
         max-width: 380px;
+        text-align: right;
     }
 }
 

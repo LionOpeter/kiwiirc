@@ -345,6 +345,8 @@ export default {
 .kiwi-networksettings .u-input-text {
     padding-top: 0;
     margin-bottom: 20px;
+    direction: rtl;
+    text-align: right;
 }
 
 //The 'Sections' of the form
@@ -402,6 +404,8 @@ export default {
 //User nickname input, remove bottom margin
 .kiwi-networksettings form .kiwi-networksettings-user .u-input-text {
     margin-bottom: 10px;
+    direction: rtl;
+    text-align: right;
 }
 
 .kiwi-networksettings .kiwi-show-advanced-title {

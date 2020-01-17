@@ -146,7 +146,7 @@ export default {
                 // Nicks cannot start with [0-9- ]
                 // ? is not a valid nick character but we allow it as it gets replaced
                 // with a number.
-                nickPattern = /^[a-z_\\[\]{}^`|][a-z0-9_\-\\[\]{}^`|]*$/i;
+                nickPattern = /^[a-zא-ת_\\[\]{}^`|][a-z0-9א-ת_\-\\[\]{}^`|]*$/i;
             } else {
                 // Support custom pattern matches. Eg. only '@example.com' may be allowed
                 // on some IRCDs

@@ -630,6 +630,7 @@ div.kiwi-messagelist-item.kiwi-messagelist-item--selected {
 
 div.kiwi-messagelist-item.kiwi-messagelist-item--selected .kiwi-messagelist-message {
     border-left-width: 0;
+    text-align: right;
 }
 
 .kiwi-messagelist-item.kiwi-messagelist-item--selected .kiwi-messagelist-message *::selection {
@@ -683,6 +684,7 @@ div.kiwi-messagelist-item.kiwi-messagelist-item--selected .kiwi-messagelist-mess
     overflow: hidden;
     line-height: 1.5em;
     margin: 0;
+    text-align: right;
 }
 
 .kiwi-wrap--monospace .kiwi-messagelist-message {
@@ -711,13 +713,14 @@ div.kiwi-messagelist-item.kiwi-messagelist-item--selected .kiwi-messagelist-mess
     font-size: 1.2em;
     height: auto;
     line-height: normal;
-    text-align: center;
+    text-align: right;
     cursor: default;
     display: inline-block;
     padding: 0.5em 1em;
     margin: 1em auto 1em auto;
     text-transform: uppercase;
     letter-spacing: 2px;
+    direction: rtl;
 }
 
 .kiwi-messagelist-message-connection .kiwi-messagelist-time,
@@ -738,11 +741,12 @@ div.kiwi-messagelist-item.kiwi-messagelist-item--selected .kiwi-messagelist-mess
 /* Remove the min height from the message, as again, makes the page look bloated */
 .kiwi-messagelist-body {
     min-height: 0;
-    text-align: left;
+    text-align: right;
     line-height: 1.5em;
     font-size: 1.05em;
     margin: 0;
     padding: 0;
+    direction: rtl;
 }
 
 /* Channel messages - e.g 'server on #testing22 ' message and such */
